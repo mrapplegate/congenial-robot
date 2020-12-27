@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: 'BYMRBHYHVG',
+    apiKey: 'b13b35e4335e380869ef97e7b1160f1a',
+    siteId: '5c0a0085-5ad7-4469-b482-bc3049b8f437',
+    branch: 'master',
+    selector: 'div#search',
+  });
+</script>
 
     {% bundledcss %}
 
